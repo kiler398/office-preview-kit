@@ -1,0 +1,101 @@
+office-preview-kit 软件许可协议（免费商用 · 不开源）
+office-preview-kit Software License (Freeware for commercial use · Not open source)
+
+Copyright (c) 2026 kiler3982. All rights reserved. 保留所有权利。
+
+──────────────────────────────────────────────────────────────────────
+中文版
+──────────────────────────────────────────────────────────────────────
+
+本协议适用于通过 npm 发布的 office-preview-kit 软件包（以下简称“本软件”），
+即 npm 注册表中 office-preview-kit 包所包含的编译产物、类型声明、WebAssembly
+二进制文件及随附文档。本软件的源代码不公开，不在本协议授权范围内。
+
+1. 授权
+   在遵守本协议的前提下，作者授予你一项全球范围、免费、非独占、不可转让的许可，
+   允许你：
+   (a) 下载、安装和使用本软件，用途包括个人、教育、企业内部及商业用途；
+   (b) 将本软件集成到你开发的网站、应用、SaaS 服务或其他产品中，并随这些产品
+       一起分发、部署和销售，无需向作者支付任何费用。
+
+2. 限制
+   你不得：
+   (a) 对本软件进行反向工程、反编译、反汇编或以其他方式试图获取其源代码，
+       但适用法律明确允许的情形除外；
+   (b) 将本软件单独出售、出租或再许可，或者把本软件（或经修改的本软件）作为
+       独立的组件库、SDK 进行再发布；
+   (c) 删除或修改本软件中的版权声明及许可信息；
+   (d) 声称本软件由你开发。
+
+3. 第三方组件
+   本软件包含或依赖若干开源组件（见 THIRD_PARTY_NOTICES.md）。这些组件按照
+   各自的开源许可证授权，相应许可证中的条款仅适用于这些组件本身。
+
+4. 无担保
+   本软件按“现状”提供，不附带任何明示或默示的担保，包括但不限于适销性、
+   特定用途适用性及不侵权的担保。
+
+5. 责任限制
+   在适用法律允许的最大范围内，作者不对因使用或无法使用本软件而产生的任何
+   直接、间接、附带、特殊或后果性损害承担责任。
+
+6. 终止
+   如你违反本协议，许可将自动终止。终止后你应停止使用并删除本软件的所有副本。
+
+7. 协议变更
+   作者可以为本软件的后续版本更改许可条款。你已经获得的版本，仍按获得时适用的
+   条款继续使用。
+
+──────────────────────────────────────────────────────────────────────
+English version
+──────────────────────────────────────────────────────────────────────
+
+This license applies to the office-preview-kit package published on npm
+(the "Software"): the compiled code, type declarations, WebAssembly binaries
+and accompanying documentation contained in the office-preview-kit package on
+the npm registry. The source code of the Software is not public and is not
+licensed under this agreement.
+
+1. Grant
+   Subject to this license, the author grants you a worldwide, free of charge,
+   non-exclusive, non-transferable license to:
+   (a) download, install and use the Software for personal, educational,
+       internal business and commercial purposes;
+   (b) integrate the Software into websites, applications, SaaS services or
+       other products you build, and distribute, deploy and sell it as part of
+       those products, without paying any fee to the author.
+
+2. Restrictions
+   You may not:
+   (a) reverse engineer, decompile, disassemble or otherwise attempt to obtain
+       the source code of the Software, except to the extent applicable law
+       expressly permits;
+   (b) sell, rent or sublicense the Software on its own, or redistribute the
+       Software (modified or not) as a standalone component library or SDK;
+   (c) remove or alter copyright notices or license information in the Software;
+   (d) claim that you authored the Software.
+
+3. Third-party components
+   The Software contains or depends on open-source components (see
+   THIRD_PARTY_NOTICES.md). Those components are licensed under their own
+   open-source licenses, whose terms apply to those components only.
+
+4. No warranty
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+5. Limitation of liability
+   TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL THE
+   AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR
+   CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF OR INABILITY TO USE THE
+   SOFTWARE.
+
+6. Termination
+   This license terminates automatically if you breach it. Upon termination you
+   must stop using and delete all copies of the Software.
+
+7. Changes
+   The author may change the license terms for future versions of the Software.
+   Versions you have already obtained remain licensed under the terms that
+   applied when you obtained them.

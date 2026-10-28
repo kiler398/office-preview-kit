@@ -1,0 +1,19 @@
+import { ssrRenderAttrs, ssrRenderStyle } from "vue/server-renderer";
+import { useSSRContext } from "vue";
+import { _ as _export_sfc } from "./plugin-vue_export-helper.1tPrXgE0.js";
+const __pageData = JSON.parse('{"title":"格式支持","description":"","frontmatter":{},"headers":[],"relativePath":"guide/formats.md","filePath":"guide/formats.md"}');
+const _sfc_main = { name: "guide/formats.md" };
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<div${ssrRenderAttrs(_attrs)}><h1 id="格式支持" tabindex="-1">格式支持 <a class="header-anchor" href="#格式支持" aria-label="Permalink to &quot;格式支持&quot;">​</a></h1><table tabindex="0"><thead><tr><th>格式</th><th style="${ssrRenderStyle({ "text-align": "center" })}">浏览器直接渲染</th><th>说明</th></tr></thead><tbody><tr><td><code>.docx</code> <code>.docm</code> <code>.dotx</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>分页排版，支持页眉页脚、表格、图片、编号、脚注、中文排版</td></tr><tr><td><code>.xlsx</code> <code>.xlsm</code> <code>.xltx</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>多工作表、冻结窗格、条件格式、图表；<strong>公式只显示文件中缓存的结果</strong></td></tr><tr><td><code>.pptx</code> <code>.pptm</code> <code>.ppsx</code> <code>.potx</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>母版、布局、图表、备注；<strong>不播放动画和切换效果</strong></td></tr><tr><td><code>.pdf</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>基于 pdf.js，懒加载渲染</td></tr><tr><td><code>.csv</code> <code>.tsv</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>自动识别 UTF-8 / GB18030 编码；所有字段按文本显示</td></tr><tr><td><code>.xls</code>、WPS 表格 <code>.et</code> <code>.ett</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅ 实验性</td><td>旧版二进制读取器（BIFF8 子集）</td></tr><tr><td><code>.doc</code> <code>.ppt</code>、WPS 文字 <code>.wps</code> <code>.wpt</code>、WPS 演示 <code>.dps</code> <code>.dpt</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>先尝试直接读取；读取器不支持时，由<strong>内置转换器</strong>在浏览器中转成 DOCX / PPTX</td></tr><tr><td><code>.xlsb</code> <code>.ods</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>内置转换器在浏览器中转成 XLSX</td></tr><tr><td><code>.odt</code> <code>.odp</code>、<code>.rtf</code>、<code>.ofd</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">➡️</td><td>需要配置 <a href="/office-preview-kit/features/conversion"><code>convert</code></a></td></tr><tr><td><code>.txt</code> <code>.md</code> <code>.json</code> <code>.xml</code> <code>.log</code> 等</td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>纯文本显示，支持搜索</td></tr><tr><td><code>.png</code> <code>.jpg</code> <code>.gif</code> <code>.webp</code> <code>.bmp</code> <code>.svg</code></td><td style="${ssrRenderStyle({ "text-align": "center" })}">✅</td><td>图片显示，支持缩放和批注</td></tr></tbody></table><p><strong>格式识别依据文件内容，而不是扩展名。</strong> 组件会读取 ZIP 目录和 OLE2 复合文档的流名，判断文件的真实格式：</p><ul><li>以 OOXML 格式保存的 <code>.wps</code> 按 DOCX 渲染；</li><li>含有 <code>WordDocument</code> / <code>Workbook</code> / <code>PowerPoint Document</code> 流的 WPS 二进制文件，按 DOC / XLS / PPT 渲染；</li><li>浏览器渲染器无法直接打开的 DOC / PPT / WPS / XLSB / ODS，会自动交给<a href="/office-preview-kit/features/conversion">内置转换器</a>；</li><li>仍然无法处理的文件（WPS 私有结构、ODT 等）会给出明确的错误原因；如果配置了 <code>convert</code>，则自动转换后再预览。</li></ul><blockquote><p>ℹ️ 内置转换器保留的是<strong>内容和结构</strong>（文字、标题、列表、表格、基本格式、幻灯片文本、表格数值与公式），复杂版式、图表和单元格样式可能丢失。对还原度要求高的场景，可以关闭内置转换器（<code>builtinConvert: false</code>），统一交给服务端转换。</p></blockquote></div>`);
+}
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("guide/formats.md");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const formats = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
+export {
+  __pageData,
+  formats as default
+};

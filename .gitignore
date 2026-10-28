@@ -1,21 +1,20 @@
-# 本仓库只公开：组件使用手册 + Vue 3 示例（示例通过 npm 安装 office-preview-kit）。
+# 本仓库公开：使用手册 README、许可协议、文档站（VitePress，组件从 npm 安装）、部署流程。
 # 组件源码、构建产物、构建配置一律不提交。采用白名单：先忽略全部，再放行。
 
 /*
 !/.gitignore
 !/README.md
+!/LICENSE
+!/THIRD_PARTY_NOTICES.md
+!/.github/
 
-# 手册中引用的截图
+# 文档站（GitHub Pages）
 !/docs/
-/docs/*
-!/docs/images/
-
-# Vue 3 示例（依赖 npm 包，不含组件源码）
-!/example-vue/
-/example-vue/node_modules/
-/example-vue/dist/
-/example-vue/public/pdfjs/
-/example-vue/package-lock.json
+/docs/node_modules/
+/docs/package-lock.json
+/docs/public/pdfjs/
+/docs/.vitepress/dist
+/docs/.vitepress/cache
 
 # 通用
 .DS_Store

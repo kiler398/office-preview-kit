@@ -1,0 +1,40 @@
+:root {
+  --vp-c-brand-1: #446995;
+  --vp-c-brand-2: #5a7fab;
+  --vp-c-brand-3: #2f5d8c;
+  --vp-c-brand-soft: rgba(68, 105, 149, 0.14);
+}
+.dark {
+  --vp-c-brand-1: #8fb0d8;
+  --vp-c-brand-2: #a6c1e2;
+  --vp-c-brand-3: #6f95c4;
+}
+
+/* ---------- 在线演示 ---------- */
+.okp-demo { margin: 16px 0 24px; border: 1px solid var(--vp-c-divider); border-radius: 10px; overflow: hidden; background: var(--vp-c-bg-soft); }
+.okp-demo-files, .okp-demo-toolbar { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; padding: 8px 10px; border-bottom: 1px solid var(--vp-c-divider); font-size: 13px; }
+.okp-demo-toolbar { background: var(--vp-c-bg); }
+.okp-demo-files button, .okp-demo-toolbar button, .okp-upload { height: 28px; padding: 0 10px; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); color: var(--vp-c-text-1); font-size: 13px; cursor: pointer; line-height: 26px; }
+.okp-demo-files button:hover, .okp-demo-toolbar button:hover, .okp-upload:hover { border-color: var(--vp-c-brand-1); }
+.okp-demo-files button:disabled, .okp-demo-toolbar button:disabled { opacity: .45; cursor: default; }
+.okp-demo-files button.on, .okp-demo-toolbar button.on { background: var(--vp-c-brand-1); border-color: var(--vp-c-brand-1); color: #fff; }
+.okp-upload { position: relative; display: inline-block; }
+.okp-upload input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.okp-demo-stage { background: #e9e9e9; }
+.okp-num { width: 46px; height: 28px; text-align: center; border: 1px solid var(--vp-c-divider); border-radius: 6px; background: var(--vp-c-bg); }
+.okp-muted { color: var(--vp-c-text-2); font-size: 13px; }
+.okp-sep { width: 1px; height: 18px; background: var(--vp-c-divider); margin: 0 4px; }
+.okp-log { margin: 0; padding: 10px 12px; font-size: 12px; line-height: 1.6; max-height: 170px; overflow: auto; background: var(--vp-c-bg); border-top: 1px solid var(--vp-c-divider); }
+.okp-json { padding: 8px 12px; font-size: 12px; background: var(--vp-c-bg); border-top: 1px solid var(--vp-c-divider); }
+.okp-json pre { max-height: 220px; overflow: auto; margin: 6px 0 0; }
+.okp-result { padding: 12px; border-top: 1px solid var(--vp-c-divider); background: var(--vp-c-bg); }
+.okp-result img { display: block; max-width: 100%; margin-top: 8px; box-shadow: 0 1px 6px rgba(0,0,0,.2); }
+.okp-thumbs { display: flex; gap: 10px; overflow-x: auto; padding: 12px; border-top: 1px solid var(--vp-c-divider); background: var(--vp-c-bg); }
+.okp-thumbs img { height: 180px; box-shadow: 0 1px 4px rgba(0,0,0,.2); background: #fff; }
+.okp-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; padding: 14px; }
+.okp-card { display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+.okp-card-img { height: 170px; display: flex; align-items: center; justify-content: center; background: var(--vp-c-bg); border: 1px solid var(--vp-c-divider); border-radius: 6px; overflow: hidden; }
+.okp-card-img img { max-width: 100%; max-height: 100%; }
+
+/* 在线演示页铺满全宽 */
+.okp-playground .VPDoc, .okp-playground .VPPage { padding: 0 !important; }
