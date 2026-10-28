@@ -1,0 +1,23 @@
+# 本仓库只公开：组件使用手册 + Vue 3 示例（示例通过 npm 安装 office-preview-kit）。
+# 组件源码、构建产物、构建配置一律不提交。采用白名单：先忽略全部，再放行。
+
+/*
+!/.gitignore
+!/README.md
+
+# 手册中引用的截图
+!/docs/
+/docs/*
+!/docs/images/
+
+# Vue 3 示例（依赖 npm 包，不含组件源码）
+!/example-vue/
+/example-vue/node_modules/
+/example-vue/dist/
+/example-vue/public/pdfjs/
+/example-vue/package-lock.json
+
+# 通用
+.DS_Store
+*.log
+*.tgz
